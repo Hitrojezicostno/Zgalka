@@ -1,0 +1,25 @@
+<ion-navbar *navbar sifranti>
+	<ion-title>Kategorije izdelkov</ion-title>
+</ion-navbar>
+
+<ion-content>
+	<ion-list>
+		<ion-item-sliding *ngFor="#item of items" >
+			<ion-item (click)="openItem($event, item)">
+		      {{ item }}
+		     </ion-item>
+			<ion-item-options>
+				<button danger>
+					<ion-icon name="trash"></ion-icon>
+					Delete
+					</button>
+			</ion-item-options>
+	    </ion-item-sliding>
+	    <ion-item *ngIf="new">
+	    	<ion-input type="text" placeholder="Kliknite za dodajanje kategorije"></ion-input>
+	    </ion-item>
+	</ion-list>
+	<button fab fab-bottom fab-right style="position: fixed;" (click)="new = true" calm>
+		<ion-icon name="add"></ion-icon>
+	</button>
+</ion-content>

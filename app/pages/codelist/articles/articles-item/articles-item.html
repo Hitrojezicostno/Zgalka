@@ -1,0 +1,81 @@
+<ion-navbar *navbar sifranti>
+	<ion-title>{{item.naziv}}</ion-title>
+</ion-navbar>
+<ion-content>
+	<ion-list>
+		<li class="divider">
+			<span>Osnovni podatki</span>
+		</li>
+		<div padding>
+			<li>
+				<span>ŠIFRA</span>
+			</li>
+			<li class="customLine">
+				<input type="text" [(ngModel)]="item.sifra" class="customInput" disabled="">
+			</li>
+			<li>
+				<span>NAZIV</span>
+			</li>
+			<li class="customLine">
+				<input type="text" [(ngModel)]="item.naziv" class="customInput">
+			</li>
+			<li>
+				<span>KATEGORIJA</span>
+			</li>
+			<ion-item>
+				<ion-select [(ngModel)]="item.kategorija">
+					<ion-option value="1" selected>KAT 1</ion-option>
+					<ion-option value="2">KAT 2</ion-option>
+					<ion-option value="3">KAT 3</ion-option>
+				</ion-select>
+			</ion-item>
+		</div>
+		<li class="divider">
+			<span>Merska enota</span>
+		</li>
+		<div padding>
+			<li>
+				<span>ENOTA</span>
+			</li>
+			<li class="customLine">
+				<input type="text" [(ngModel)]="item.merska_enota" class="customInput">
+			</li>
+		</div>
+		<li class="divider">
+			<span>Cena</span>
+		</li>
+		<div padding>
+			<li>
+				<span>CENA</span>
+			</li>
+			<li class="customLine">
+				<input type="text" [(ngModel)]="item.cena" class="customInput">
+			</li>
+			<li>
+				<span>CENA BREZ DDV</span>
+			</li>
+			<li class="customLine">
+				<input type="text" [(ngModel)]="item.cena_brez_ddv" class="customInput">
+			</li>
+			<li>
+				<span>DAVČNA STOPNJA</span>
+			</li>
+			<li class="customLine">
+				<input type="text" [(ngModel)]="item.ddv" class="customInput">
+			</li>
+		</div>
+		<li class="divider">
+			<span>Dodatne možnosti</span>
+		</li>
+		<div padding>
+			<ion-item>
+				<ion-label>Vprašaj za ceno</ion-label>
+				<ion-checkbox [(ngModel)]="item.vprasaj_za_ceno"></ion-checkbox>
+			</ion-item>
+			<ion-item>
+				<ion-label>Vprašaj za količino</ion-label>
+				<ion-checkbox [(ngModel)]="item.vprasaj_za_kolicino"></ion-checkbox>
+			</ion-item>
+		</div>
+	</ion-list>
+</ion-content>

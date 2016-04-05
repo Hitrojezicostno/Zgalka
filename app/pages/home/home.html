@@ -1,0 +1,63 @@
+<ion-navbar *navbar primary>
+	<ion-title>Davčna blagajna</ion-title>
+
+	<ion-buttons end>
+		<button (click)="presentActionSheet()">
+			<ion-icon name="more"></ion-icon>
+		</button>
+	</ion-buttons>
+</ion-navbar>
+<ion-content>
+	<div style="background-color: grey;width: 100%;text-align:center;padding-top: 20px;padding-bottom: 20px;">
+		<span style="color:white;font-size: 4em;font-weight: lighter;">{{ clock | date:'HH'}}:{{ clock | date:'mm'}}</span>
+		<p style="color:white;margin-top: 0">{{ date | date: 'EEEE'}}, {{ date | date: 'dd. MMMM'}}</p>
+<!-- 		<div style="text-align: left;padding-left: 20px;">
+			<p style="color: white; font-size: 1.5em;margin-bottom: 0;">Pekarna Friškovec</p>
+			<p style="color: white;font-size: 1.2em;margin-top: 0">MIHA FRIŠKOVEC</p>
+		</div> -->
+	</div>
+	<div style="width: 100%;background-color: #F44336;margin-top: 10px;padding: 15px 0;" (click)="open($event, 'nastavitve')">
+		<ion-row>
+			<ion-col width-80>
+				<p style="font-weight: lighter;font-size: 2.5em;color:#fff;margin: 0">Nastavitve</p>
+			</ion-col>
+			<ion-col width-20>
+				<span style="text-align: right;"><ion-icon style="color:#fff;font-size: 4em;margin: 0" name="settings"></ion-icon></span>
+			</ion-col>
+		</ion-row>
+	</div>
+	
+	<div style="width: 100%;background-color: #2196F3;margin-top: 10px;padding: 15px 0;" (click)="open($event, 'blagajna')">
+		<ion-row>
+			<ion-col width-80>
+				<p style="font-weight: lighter;font-size: 2.5em;color:#fff;margin: 0">Blagajna</p>
+			</ion-col>
+			<ion-col width-20>
+				<span style="text-align: right;"><ion-icon style="color:#fff;font-size: 4em;margin: 0" name="cash"></ion-icon></span>
+			</ion-col>
+		</ion-row>
+	</div>
+	
+	<div style="width: 100%;background-color: #009688;margin-top: 10px;padding: 15px 0;" (click)="open($event, 'procesi')">
+		<ion-row>
+			<ion-col width-80>
+				<p style="font-weight: lighter;font-size: 2.5em;color:#fff;margin: 0">Procesi</p>
+			</ion-col>
+			<ion-col width-20>
+				<span style="text-align: right;"><ion-icon style="color:#fff;font-size: 4em;margin: 0" name="list"></ion-icon></span>
+			</ion-col>
+		</ion-row>
+	</div>
+	
+	<div style="width: 100%;background-color: #9C27B0;margin-top: 10px;padding: 15px 0;" (click)="open($event, 'artikli')">
+		<ion-row>
+			<ion-col width-80>
+				<p style="font-weight: lighter;font-size: 2.5em;color:#fff;margin: 0">Šifranti</p>
+			</ion-col>
+			<ion-col width-20>
+				<span style="text-align: right;"><ion-icon style="color:#fff;font-size: 4em;margin: 0" name="list-box"></ion-icon></span>
+			</ion-col>
+		</ion-row>
+	</div>
+	
+</ion-content>

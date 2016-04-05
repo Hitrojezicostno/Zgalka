@@ -1,0 +1,20 @@
+<ion-content padding style="background: url(http://www.instafinancial.com/images/business-meeting.jpg) center; background-size: cover">
+    <div style="text-align: center;margin-top: 70px;">
+        <h1 style="color: #fff;font-size: 2.5em;font-weight: lighter;">Davčna blagajna</h1>
+    </div>
+    <div class="formFields" style="margin-top: 80px">
+        <ion-list>
+            <ion-item>
+              <ion-input type="text" placeholder="Uporabniško ime"></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-input type="password" placeholder="Geslo"></ion-input>
+            </ion-item>
+        </ion-list>
+        <button full (click)="login()">Prijava</button>
+        <div style="text-align: center;margin-top: 20px;">
+            <a (click)="doAlert()"><b><u>DEMO UPORABNIK</u></b></a>
+        </div>
+    </div>
+
+</ion-content>

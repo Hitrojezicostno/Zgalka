@@ -1,0 +1,44 @@
+<ion-toolbar nastavitve>
+	<ion-title>
+		Dodaj prodajno mesto
+	</ion-title>
+	<ion-buttons end>
+		<button (click)="close()">
+			<span primary showWhen="ios">Cancel</span>
+			<ion-icon name="md-close" showWhen="android,windows"></ion-icon>
+		</button>
+	</ion-buttons>
+</ion-toolbar>
+<ion-content padding>
+	<ion-list>
+		<ion-item>
+			<ion-label stacked>Šifra prodajnega mesta</ion-label>
+			<ion-input type="text"></ion-input>
+		</ion-item>
+		<ion-item>
+			<ion-label stacked>Ulica</ion-label>
+			<ion-input type="text"></ion-input>
+		</ion-item>
+		<ion-item>
+			<ion-label stacked>Hišna številka</ion-label>
+			<ion-input type="text"></ion-input>
+		</ion-item>
+		<ion-item>
+			<ion-label stacked>Poštna številka</ion-label>
+			<ion-input type="text"></ion-input>
+		</ion-item>
+		<ion-item>
+			<ion-label stacked>Kraj</ion-label>
+			<ion-input type="text"></ion-input>
+		</ion-item>
+		<ion-item>
+			<ion-label stacked>Občina</ion-label>
+			<ion-input type="text"></ion-input>
+		</ion-item>
+		<ion-item>
+			<ion-label stacked>Katastrska številka občine</ion-label>
+			<ion-input type="text"></ion-input>
+		</ion-item>
+	</ion-list>
+	<button block (click)="close()">Shrani</button>
+</ion-content>

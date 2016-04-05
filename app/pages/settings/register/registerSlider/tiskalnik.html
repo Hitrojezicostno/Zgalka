@@ -1,0 +1,45 @@
+<!-- <ion-navbar *navbar hideBackButton nastavitve>
+	<ion-title>Registracija</ion-title>
+</ion-navbar> -->
+<ion-toolbar nastavitve>
+	<ion-title>Tiskalnik</ion-title>
+</ion-toolbar>
+<ion-toolbar position="bottom" light>
+	<ion-buttons start>
+		<button (click)="back()">Nazaj</button>
+	</ion-buttons>
+	<ion-buttons end>
+		<button (click)="next()">Naprej</button>
+	</ion-buttons>
+</ion-toolbar>
+<ion-content>
+	<ion-list>
+		<ion-item>
+			<ion-label>Tiskalnik</ion-label>
+			<ion-select>
+				<ion-option>USB Tiskalnik</ion-option>
+				<ion-option>Bluetooth tiskalnik</ion-option>
+				<ion-option>Ethernet tiskalnik</ion-option>
+			</ion-select>
+		</ion-item>
+		<ion-item>
+			<ion-label>Tip tiskalnika</ion-label>
+			<ion-select>
+				<ion-option>POS</ion-option>
+				<ion-option>OCPP-M05</ion-option>
+				<ion-option>Rongta</ion-option>
+			</ion-select>
+		</ion-item>
+		<ion-item>
+			<ion-label>Model tiskalnika</ion-label>
+			<ion-select>
+				<ion-option>POS tiskalnik 58mm</ion-option>
+				<ion-option>POS tiskalnik 80mm</ion-option>
+				<ion-option>A4 tisklanik</ion-option>
+			</ion-select>
+		</ion-item>
+		<ion-item>
+			<p>Išči naprave</p>
+		</ion-item>
+	</ion-list>
+</ion-content>

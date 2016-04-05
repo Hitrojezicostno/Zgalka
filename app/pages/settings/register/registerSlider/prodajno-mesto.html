@@ -1,0 +1,23 @@
+<!-- <ion-navbar *navbar hideBackButton nastavitve>
+	<ion-title>Registracija</ion-title>
+</ion-navbar> -->
+<ion-toolbar nastavitve>
+	<ion-title>Prodajna mesta</ion-title>
+</ion-toolbar>
+<ion-toolbar position="bottom" light>
+	<ion-buttons start>
+		<button (click)="back()">Nazaj</button>
+	</ion-buttons>
+	<ion-buttons end>
+		<button (click)="next()">Naprej</button>
+	</ion-buttons>
+</ion-toolbar>
+<ion-content>
+	<ion-list>
+		<ion-item>
+			<h2>Ameriška ulica 8</h2>
+			<h3>Nepremični objekt</h3>
+		</ion-item>
+	</ion-list>
+	<button block (click)="dodajMesto()">Dodaj prodajno mesto</button>
+</ion-content>

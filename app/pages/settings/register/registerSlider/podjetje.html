@@ -1,0 +1,43 @@
+<!-- <ion-navbar *navbar hideBackButton nastavitve>
+	<ion-title>Registracija</ion-title>
+</ion-navbar> -->
+<ion-toolbar nastavitve>
+	<ion-title>Osnovni podatki</ion-title>
+</ion-toolbar>
+<ion-toolbar position="bottom" light>
+	<ion-buttons start>
+		<button (click)="back()">Nazaj</button>
+	</ion-buttons>
+	<ion-buttons end>
+		<button (click)="next()">Naprej</button>
+	</ion-buttons>
+</ion-toolbar>
+<ion-content>	
+	<p>Za registracijo je potrebno vpisati naslednje podatke, ki so potrebni za uporabo davčne blagajne</p>
+	<ion-list>
+		<ion-item>
+			<ion-label stacked>ID št. za DDV</ion-label>
+				<ion-input type="text"></ion-input>
+		</ion-item>
+		<ion-item>
+			<ion-checkbox></ion-checkbox>
+			<ion-label>Zavezanec za DDV</ion-label>
+		</ion-item>
+		<ion-item>
+			<ion-label stacked>Naziv podjetja</ion-label>
+				<ion-input type="text"></ion-input>
+		</ion-item>
+		<ion-item>
+			<ion-label stacked>Naslov podjetja</ion-label>
+				<ion-input type="text"></ion-input>
+		</ion-item>
+		<ion-item>
+			<ion-label stacked>Pošta</ion-label>
+				<ion-input type="text"></ion-input>
+		</ion-item>
+		<ion-item>
+			<ion-label stacked>Kraj</ion-label>
+				<ion-input type="text"></ion-input>
+		</ion-item>
+	</ion-list>
+</ion-content>
